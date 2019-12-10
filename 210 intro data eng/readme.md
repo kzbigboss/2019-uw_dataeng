@@ -3,9 +3,9 @@
 
 ### Final Project via YouTube
 
-[![Final Project YouTube Link](http://img.youtube.com/vi/7-31KgImGgU/0.jpg)](http://www.youtube.com/watch?v=7-31KgImGgU)
+[![Final Project YouTube Link](http://img.youtube.com/vi/n76zlvF4plw/0.jpg)](http://www.youtube.com/watch?v=n76zlvF4plw)
 
-#### Helpful links
+#### Related links
 - AWS EMR / Spark
   - [Amazon EMR Product](https://aws.amazon.com/emr/): General EMR product information.
   - [Spark in EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-configure.html): Information and configurations for running Spark in Amazon EMR.
