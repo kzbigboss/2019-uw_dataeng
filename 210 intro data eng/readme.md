@@ -11,6 +11,7 @@
   - [Spark in EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-configure.html): Information and configurations for running Spark in Amazon EMR.
   - [How To - Set up Sagemaker Notebook with EMR](https://aws.amazon.com/blogs/machine-learning/build-amazon-sagemaker-notebooks-backed-by-spark-in-amazon-emr/): Instructions for configuring an EMR cluster to enable connections from a Sagemaker notebook.
   - [AWS Introduces EMR Notebooks](https://aws.amazon.com/about-aws/whats-new/2018/11/introducing-emr-notebooks-a-managed-analytics-environment-based-on-jupyter-notebooks/): Announcement introducing launching notebooks directly from the EMR console.
+  - [EMR Security](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-security-groups.html): Article explaining how to manage security groups for EMR.
 - Working with JSON in Spark
   - [JSON in Spark](https://spark.apache.org/docs/latest/sql-data-sources-json.html): General instructions for loading and interfacing with JSON in Spark.
   - [Stack Overflow: Flattening Rows in Spark](https://stackoverflow.com/questions/32906613/flattening-rows-in-spark): Conversation about how to deal with nested JSON in Spark.
@@ -19,3 +20,12 @@
   - Chicago Building Permits
     - [Chicago Data Portal Summary](https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu)
     - [GEOJSON Download Link (1.8GB)](https://data.cityofchicago.org/api/geospatial/ydr8-5enu?method=export&format=GeoJSON)
+
+#### Terminal commands
+
+To copy data from Chicago Data Portal then move to S3.
+```
+wget -O chicagopermit.json "https://data.cityofchicago.org/api/geospatial/ydr8-5enu?method=export&format=GeoJSON"
+
+aws s3 cp chicagopermit.json s3://$bucket/chicagopermit.json
+```
