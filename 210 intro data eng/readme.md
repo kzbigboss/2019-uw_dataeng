@@ -3,7 +3,7 @@
 
 ### Final Project via YouTube
 
-[![Final Project YouTube Link](http://img.youtube.com/vi/n76zlvF4plw/0.jpg)](http://www.youtube.com/watch?v=n76zlvF4plw)
+[![Final Project YouTube Link](http://img.youtube.com/vi/TS_mAIuJbIY/0.jpg)](http://www.youtube.com/watch?v=TS_mAIuJbIY)
 
 #### Related links
 - AWS EMR / Spark
