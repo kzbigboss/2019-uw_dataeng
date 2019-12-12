@@ -20,6 +20,8 @@
   - Chicago Building Permits
     - [Chicago Data Portal Summary](https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu)
     - [GEOJSON Download Link (1.8GB)](https://data.cityofchicago.org/api/geospatial/ydr8-5enu?method=export&format=GeoJSON)
+- Analysis
+  - [Notebook](notebook.ipynb)
 
 #### Terminal commands
 
