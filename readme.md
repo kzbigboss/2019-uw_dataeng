@@ -1,6 +1,6 @@
 # Big Data Certificate @ University of Washington
 
-This report collects the artifacts I create as part of completing the [University of Washington's Big Data Technologies](https://www.pce.uw.edu/certificates/big-data-technologies) certificate.
+This repo collects the artifacts I create while completing the [University of Washington's Big Data Technologies](https://www.pce.uw.edu/certificates/big-data-technologies) certificate.
 ## Courses
 - Introduction to Data Engineering
   - Session: October 2018 - December 2019
