@@ -46,7 +46,7 @@
       - Better to have less larger files than several smaller ones
 - Spark
   - Application architecture
-    - ![SparkArchitecture](images/2020/01/sparkarchitecture.png)
+    - ![SparkArchitecture](/images/2020/01/sparkarchitecture.png)
   - RDDs
     - Distributed, partitioned, immutable collections of data
     - Not actually changing anything - always creating a new RDD
@@ -62,7 +62,7 @@
     - RDD is only operation on after an action
     - Helpful for optimizer to figure out an execution plan
   - Application Lifecycle
-    - ![SparkApplicationLifecycle](images/2020/01/sparkapplicationlifecycle.png)
+    - ![SparkApplicationLifecycle](/images/2020/01/sparkapplicationlifecycle.png)
   - Spark SQL
     - DataFrame
       - Structured RDD
@@ -120,4 +120,4 @@
     - Data management
     - SecOps
   - Not "data science"
-    - ![buildingdatapipelines](images/2020/01/buildingdatapipelines.png)
+    - ![buildingdatapipelines](/images/2020/01/buildingdatapipelines.png)
