@@ -1,0 +1,123 @@
+2019-01-08 Big Data 220: Lecture 1
+
+- Course Schedule
+  - Introductions (1 week)
+  - Building Analytics Pipelines (2 weeks)
+  - Working with streaming data (3 weeks)
+  - Landing data for downstream analysis (1 week)
+  - Production considerations for data pipelines (2 weeks)
+  - Project presentations (1 week)
+- Logistics
+  - Weds, 6p-9p, 1/8 - 3/10
+  - Bellevue room: same as last time
+  - Instructor will miss a week, need to figure out how to handle later
+  - Instructor might present virtually when necessary
+- Instructor
+  - Jason Kolter, in data engineering for ~15 years
+  - Works in Olympia for Washington State
+  - Authored Spark In Motion video course, available via manning.com/livevideo/spark-in-motion
+- Course introductions
+  - People and projects...
+- Introduction to Big Data
+  - V's
+    - Volume, Velocity, Variety, Variability, Veracity, Value
+  - Big Data != Hadoop
+  - Collection of technologies that allow for processing of any size or type of data to meet any requirements.
+  - Massive exposition of non-relational data required a distributed approach to processing data
+    - Hello Hadoop
+  - Speed is a challenge
+    - All I/O flows are dependent on HDFS
+    - Crafting pipelines is how we often the speed challenge
+- **Data is useless if isn't in a useable state and accessible by the consumer in a timely manner.**
+- Class Environment
+  - Azure Dev Labs
+    - "Claimed" VM
+  - Docker
+    - Containers v VMs
+    - Images v containers
+  - Databricks
+    - Notebooks
+    - Clusters
+  - HDFS
+    - Namenode(s)
+    - Datanodes
+    - How data is broken up into blocks
+      - Single file might (probably will) be split onto multiple nodes
+      - Better to have less larger files than several smaller ones
+- Spark
+  - Application architecture
+    - ![SparkArchitecture](images/2020/01/sparkarchitecture.png)
+  - RDDs
+    - Distributed, partitioned, immutable collections of data
+    - Not actually changing anything - always creating a new RDD
+  - Transformations
+    - Process RDD and return another
+      - map, flatMap, union
+  - Actions
+    - Process RDD and return a result
+  - Creating/Saving
+    - Spark context
+    - textFile, wholeTextFiles, forEach
+  - Lazy execution
+    - RDD is only operation on after an action
+    - Helpful for optimizer to figure out an execution plan
+  - Application Lifecycle
+    - ![SparkApplicationLifecycle](images/2020/01/sparkapplicationlifecycle.png)
+  - Spark SQL
+    - DataFrame
+      - Structured RDD
+    - Dataset
+      - Alias for DataFrame starting in Spark 2.0
+      - Not Python
+    - SparkSession
+      - Available as 'spark' in shell/notebook
+  - Spark Web UI
+    - Port 4040-4043
+  - Scala v PySpark
+    - For major operations, pretty negligible difference
+    - For heavy operations with unpopular package, maybe Scala.  Maybe.
+- No SQL
+  - Cap Theorem
+    - Pick two of:
+      - C: Consistency
+      - A: Availability
+      - P: Partition Tolerance
+  - ACID
+    - A: Atomicity
+    - C: Consistency
+    - I: Isolation
+    - D: Durability
+  - BASE
+    - Relaxes ACID
+    - BA: Basic availability
+    - S: Soft state
+    - E: eventual consistency (strong or weak)
+  - NoSQL != "Not RDBMS"
+    - Not Only SQL
+  - Dimensions
+    - Data Model
+      - Key/value, columnular, document, etc
+    - Storage model
+      - In-memory, persistent
+    - Consistency Model
+      - Eventual or strict? Tunable?
+    - Physical model
+      - Share-nothing, master/slave, master/replica
+    - Read/Write Performance
+      - Read-heavy use case, write-heavy use case, lookups/scans
+    - Indexes
+      - Secondary indexes
+    - Failure handling and high availability
+      - CAP theorem
+    - Client usage
+      - Query-langauge, API, CLI
+- Building Data Pipelines
+  - Big data architecture/engineerign == building big data pipelines
+  - More than just code/processing
+    - Cluster planning
+    - Tuning
+    - DevOps
+    - Data management
+    - SecOps
+  - Not "data science"
+    - ![buildingdatapipelines](images/2020/01/buildingdatapipelines.png)
